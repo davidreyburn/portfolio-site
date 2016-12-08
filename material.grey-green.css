@@ -7664,10 +7664,18 @@ iframe.heightSet {
     background-image: url(./img/bg.jpg);
 }
 
+.dj-header {
+    justify-content: flex-end !important;
+}
+
+.dj-tab {
+    margin-left: auto;
+    margin-right: 0;
+}
+
 .dj-section-main {
     align-self: center;
     background-color: whitesmoke;
-    padding-top: 30px;
     width: 70%;
     border: 2px;
 }
@@ -7675,8 +7683,18 @@ iframe.heightSet {
 .dj-content-main {
     align-self: center;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: lighter;
     line-height: 2em;
     margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
     width: 75%;
+}
+
+.dj-footer-main {
+    border-top: 1px solid #e2e2e2;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    width: 80%;
 }
