@@ -4759,7 +4759,7 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,.md
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    width: 70%;
+    width: 100%;
     margin: 0;
     padding: 0;
     border: none;
@@ -5025,7 +5025,6 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,.md
 }
 
 .mdl-layout__tab-bar {
-    height: 96px;
     margin: 0;
     width: calc(100% - 112px);
     padding: 0 0 0 56px;
@@ -7676,8 +7675,8 @@ iframe.heightSet {
 .dj-section-main {
     align-self: center;
     background-color: whitesmoke;
-    width: 70%;
     border: 2px;
+    max-width: 600px;
 }
 
 .dj-content-main {
@@ -7697,4 +7696,17 @@ iframe.heightSet {
     padding-top: 15px;
     padding-bottom: 30px;
     width: 80%;
+}
+
+.embiggen {
+    width: 85% !important;
+}
+
+#main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#content {
+    max-width: 900px;
 }
