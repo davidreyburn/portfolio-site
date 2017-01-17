@@ -1,6 +1,6 @@
 /**
  * material-design-lite - Material Design Components in CSS, JS and HTML
- * @version v1.2.1
+ * @version v1.3.0
  * @license Apache-2.0
  * @copyright 2015 Google, Inc.
  * @link https://github.com/google/material-design-lite
@@ -265,11 +265,11 @@ blockquote {
 blockquote:before {
     position: absolute;
     left: -.5em;
-    content: 'â€œ'
+    content: '“'
 }
 
 blockquote:after {
-    content: 'â€';
+    content: '”';
     margin-left: -.05em
 }
 
@@ -3236,6 +3236,10 @@ input.mdl-button[type="submit"] {
     width: 90%
 }
 
+.mdl-card__supporting-text.mdl-card--border {
+    border-bottom: 1px solid rgba(0,0,0,.1)
+}
+
 .mdl-card__actions {
     font-size: 16px;
     line-height: normal;
@@ -4653,7 +4657,6 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,.md
     flex-direction: column;
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
-    -ms-grid-row-align: stretch;
     align-items: stretch;
     padding-top: 16px
 }
@@ -4742,7 +4745,6 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,.md
 }
 
 .mdl-layout__header {
-    align-self: center;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -4866,6 +4868,7 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,.md
 .mdl-layout__header--waterfall.mdl-layout__header--waterfall-hide-top {
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
+    justify-content: flex-end
 }
 
 .mdl-layout__header-row {
@@ -4933,7 +4936,6 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,.md
     flex-direction: row;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    -ms-grid-row-align: center;
     align-items: center
 }
 
@@ -5024,6 +5026,7 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,.md
 }
 
 .mdl-layout__tab-bar {
+    height: 96px;
     margin: 0;
     width: calc(100% - 112px);
     padding: 0 0 0 56px;
@@ -5231,7 +5234,9 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,.md
     font-size: 16px;
     line-height: 24px;
     display: inline-block;
+    vertical-align: middle;
     box-sizing: border-box;
+    height: 24px;
     margin: 0;
     padding-left: 0
 }
@@ -5296,15 +5301,15 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple,.md
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     transition-property: transform;
     transition-property: transform,-webkit-transform;
-    -webkit-transform: scale3d(0,0,0);
-    transform: scale3d(0,0,0);
+    -webkit-transform: scale(0,0);
+    transform: scale(0,0);
     border-radius: 50%;
     background: rgb(158,158,158)
 }
 
 .mdl-radio.is-checked .mdl-radio__inner-circle {
-    -webkit-transform: scale3d(1,1,1);
-    transform: scale3d(1,1,1)
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1)
 }
 
 fieldset[disabled] .mdl-radio .mdl-radio__inner-circle,.mdl-radio.is-disabled .mdl-radio__inner-circle {
@@ -5377,6 +5382,7 @@ _:-ms-input-placeholder,:root .mdl-slider.mdl-slider.is-upgraded {
     color: rgb(158,158,158);
     -webkit-align-self: center;
     -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     z-index: 1;
     cursor: pointer
@@ -5747,6 +5753,7 @@ _:-ms-input-placeholder,:root .mdl-slider.mdl-slider.is-upgraded {
     text-align: center;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center
 }
 
@@ -6067,6 +6074,14 @@ _:-ms-input-placeholder,:root .mdl-slider.mdl-slider.is-upgraded {
     height: 100%;
     overflow: hidden;
     border-color: inherit
+}
+
+.mdl-spinner__circle-clipper.mdl-spinner__left {
+    float: left
+}
+
+.mdl-spinner__circle-clipper.mdl-spinner__right {
+    float: right
 }
 
 .mdl-spinner__circle-clipper .mdl-spinner__circle {
@@ -6761,6 +6776,7 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label,.mdl-textfield.is-disabl
 .mdl-cell--middle {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center
 }
 
@@ -6773,6 +6789,7 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label,.mdl-textfield.is-disabl
 .mdl-cell--stretch {
     -webkit-align-self: stretch;
     -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
     align-self: stretch
 }
 
@@ -7658,14 +7675,6 @@ iframe.heightSet {
     border: 1px solid rgba(0,0,0,.5)
 }
 
-.bg-main {
-    background-image: url(./img/bg.jpg);
-}
-
-.dj-header {
-    justify-content: flex-end !important;
-}
-
 #stage {
     margin: 0 auto;
     align-self: center;
@@ -7679,63 +7688,9 @@ iframe.heightSet {
     font-weight: lighter;
     line-height: 2em;
     margin: 5 auto;
-    background-color: whitesmoke;
-}
-
-.dj-text {
     padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.dj-card {
-    font-size: 18px;
-    font-weight: lighter;
-    line-height: 2em;
-    background-color: whitesmoke;
-}
-
-.dj-card-text {
-    padding-top: 15px;
     padding-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.dj-article-img {
-    max-width: 100%;
-}
-
-.crop {
-    overflow: hidden;
-    max-height: 350px;
-}
-
-#card1 > .mdl-card__title {
-    color: #fff;
-    height: 20%;
-    background-image: url(./img/bg.jpg);
-}
-
-#card2 > .mdl-card__title {
-    color: #fff;
-    height: 33%;
-    background-image: url(./img/cart.jpg);
-}
-
-#card3 > .mdl-card__title {
-    color: #fff;
-    height: 30%;
-    background-image: url(./img/flowers.jpg);
-}
-
-#card4 > .mdl-card__title {
-    color: #fff;
-    height: 35%;
-    background-image: url(./img/dj.jpg);
-}
-
-#card5 > .mdl-card__title {
-    color: #fff;
+    background-color: whitesmoke;
 }
