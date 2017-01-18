@@ -1,200 +1,67 @@
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A portfolio template that uses Material Design Lite.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>dreyburn.me</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="material.grey-green.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="A portfolio template that uses Material Design Lite.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>dreyburn.me</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+        <link rel="stylesheet" href="material.grey-green.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script type="text/javascript" src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="spapp.js"></script>
+    </head>
 
-<script>
-$(document).ready(function(){
-	$("#t1").click(function(){
-		$("#tab1").fadeIn(400);
-		$("#tab2").hide();
-		$("#tab3").hide();
-		$("#tab4").hide();
-	});
-	$("#t2").click(function(){
-		$("#tab1").hide();
-		$("#tab2").fadeIn(400);
-		$("#tab3").hide();
-		$("#tab4").hide();
-	});
-	$("#t3").click(function(){
-		$("#tab1").hide();
-		$("#tab2").hide();
-		$("#tab3").fadeIn(400);
-		$("#tab4").hide();
-	});
-	$("#t4").click(function(){
-		$("#tab1").hide();
-		$("#tab2").hide();
-		$("#tab3").hide();
-		$("#tab4").fadeIn(400);
-	});
-});
-</script>
 
-<body class="bg-main">
 
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="foreground">
+    <body class="bg-main">
 
-		<header class="dj-header mdl-layout__header mdl-shadow--4dp mdl-layout__header--waterfall">
-            <div class="mdl-layout__header-row portfolio-logo-row">
-                <span class="mdl-layout__title">
-                    <div class="portfolio-logo"></div>
-                    <span class="mdl-layout__title">dreyburn.me</span>
-                </span>
-            </div>
-            <div class="mdl-layout__tab-bar">
-                <a href="#tab1" class="mdl-layout__tab is-active sm" id="t1">About</a>
-                <a href="#tab2" class="mdl-layout__tab lg" id="t2">Portfolio</a>
-                <a href="#tab3" class="mdl-layout__tab sm" id="t3">Resume</a>
-                <a href="#tab4" class="mdl-layout__tab sm" id="t4">Testimonials</a>
-                <a href="#tab5" class="mdl-layout__tab sm" id="t5">Contact</a>
-                <a class="mdl-layout__tab" style="color:rgb(158,158,158)">____</a>
-            </div>
-        </header>
+    	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="foreground">
 
-        <main class="mdl-layout__content">
-            <div class="" id="stage">
-    
-                <div class="mdl-cell--12-col mdl-card mdl-shadow--4dp content" id="tab1">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">About</h2>
-                    </div>
-
-                    <div class="crop">
-                        <img class="dj-article-img" src="./img/rewvibes.jpg" alt>
-                    </div>
-
-                    <div class="dj-text">
-                        Welcome! My name is David Reyburn, and you’ve reached my personal portfolio site, dreyburn.me. This website was created to showcase my previous projects in design, development, and programming; alongside descriptions of my skills and work experience for any client or employer interested in what my skills can do for you.
-                        <br>
-                        I've always been a problem solver; I can't stand to let an issue go when I have a solution in my head. It's this spirit of curiosity that's helped me in my roles in technical support and design, and it inspires me to seek fresh challenges. I am self motivated and constantly expanding my knowledge of technology, design, and human nature. My years of support experience enable me to communicate effectively with end users, find where the points of frustration are, and implement better workflows. This knowledge and experience, based in a solid research background that helps me ensure I'm solving the right problem instead of just responding to the crisis, is invaluable in helping me design and implement solutions that make the interactions between humans, computers, and applications happen as painlessly as possible.
-                    </div>
+    		<header class="dj-header mdl-layout__header mdl-shadow--4dp mdl-layout__header--waterfall">
+                <div class="mdl-layout__header-row portfolio-logo-row">
+                    <span class="mdl-layout__title">
+                        <div class="portfolio-logo"></div>
+                        <span class="mdl-layout__title">dreyburn.me</span>
+                    </span>
                 </div>
-
-                <div class="mdl-grid" id="tab2" style="display: none;">
-                    
-                	<div id="card1" class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp graybox dj-card">
-
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Welcome</h2>
-                        </div>
-
-                        <div class="dj-card-text">
-                            YOLO DIY, photo booth put a bird on it semiotics sint organic. Fugiat unicorn brooklyn, paleo velit dreamcatcher small batch sed adipisicing VHS hexagon. Tofu chia consequat, culpa salvia poutine PBR&B farm-to-table la croix duis pariatur blog crucifix
-                        </div>
-
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>
-                        </div>
-
-                    </div>
-
-                    <div id="card2" class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp graybox dj-card">
-                        
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Test</h2>
-                        </div>
-
-                        <div class="dj-card-text">
-                            3 wolf moon pickled jianbing vape, kickstarter literally scenester godard activated charcoal coloring book street art vinyl laborum.
-                        </div>
-                    
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>
-                        </div>
-                    
-                    </div>
-
-                    <div id="card3" class="mdl-cell mdl-cell--8-col mdl-card mdl-shadow--4dp graybox dj-card">
-                        
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Test</h2>
-                        </div>
-
-                        <div class="dj-card-text">
-                            Fam pinterest etsy, cold-pressed et crucifix air plant fap yuccie tempor. Pop-up microdosing laboris intelligentsia irony, taxidermy pitchfork fap knausgaard air plant four loko blog.
-                        </div>
-                    
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>
-                        </div>
-
-                    </div>
-
-                    <div id="card4" class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp graybox dj-card">
-
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Test</h2>
-                        </div>
-
-                        <div class="dj-card-text">
-                            PBR&B schlitz craft beer trust fund nihil. Lo-fi delectus cardigan irure freegan roof party. Irony quis drinking vinegar, cornhole whatever poke shoreditch wayfarers.
-                        </div>
-                        
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>
-                        </div>
-
-                    </div>
-
-                    <div id="card5" class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--4dp graybox dj-card">
-
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text">Test</h2>
-                        </div>
-
-                        <div class="dj-card-text">
-                            Ethical succulents yuccie, literally whatever banjo church-key tote bag portland. Fap tousled ex, hexagon tattooed assumenda XOXO pug fashion axe schlitz edison bulb freegan aliqua kogi
-                        </div>
-                        
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>
-                        </div>
-                    
-                    </div>
-
+                <div class="mdl-layout__tab-bar">
+                    <a href="#about" class="mdl-layout__tab is-active sm">About</a>
+                    <a href="#portfolio" class="mdl-layout__tab lg">Portfolio</a>
+                    <a href="#resume" class="mdl-layout__tab sm">Resume</a>
+                    <a href="#testimonials" class="mdl-layout__tab sm">Testimonials</a>
+                    <a class="mdl-layout__tab" style="color:rgb(158,158,158)">____</a>
                 </div>
+            </header>
 
-                <div class="mdl-cell--12-col mdl-card mdl-shadow--4dp content" id="tab3" style="display: none;">
-                    <div class="dj-text">
-                        Do chillwave wolf hot chicken selfies blog fam, swag cray austin VHS. Sustainable cronut placeat edison bulb cliche, pickled reprehenderit elit venmo deep v anim thundercats. 3 wolf moon pickled jianbing vape, kickstarter literally scenester godard activated charcoal coloring book street art vinyl laborum. Ullamco fugiat incididunt anim, umami occaecat swag bespoke put a bird on it. Pabst assumenda adipisicing magna, blue bottle stumptown freegan cillum pok pok est. Ethical succulents yuccie, literally whatever banjo church-key tote bag portland. Fap tousled ex, hexagon tattooed assumenda XOXO pug fashion axe schlitz edison bulb freegan aliqua kogi.
+            <main class="mdl-layout__content">
 
-                        Plaid ramps lumbersexual, PBR&B qui sapiente beard. Fixie vaporware prism, tofu laboris blog poutine incididunt hammock twee aliqua crucifix sint poke put a bird on it. Godard YOLO DIY, photo booth put a bird on it semiotics sint organic. Fugiat unicorn brooklyn, paleo velit dreamcatcher small batch sed adipisicing VHS hexagon. Tofu chia consequat, culpa salvia poutine PBR&B farm-to-table la croix duis pariatur blog crucifix. Single-origin coffee forage proident, vinyl shoreditch swag chia lumbersexual salvia wolf authentic et chicharrones. Unicorn truffaut hot chicken fingerstache keffiyeh cold-pressed.
-
-                        Fam pinterest etsy, cold-pressed et crucifix air plant fap yuccie tempor. Pop-up microdosing laboris intelligentsia irony, taxidermy pitchfork fap knausgaard air plant four loko blog. Dolor tempor deserunt, snackwave asymmetrical disrupt lomo microdosing PBR&B schlitz craft beer trust fund nihil. Lo-fi delectus cardigan irure freegan roof party. Irony quis drinking vinegar, cornhole whatever poke shoreditch wayfarers. Eiusmod slow-carb hashtag keffiyeh etsy ut, gentrify cardigan street art venmo cillum proident. Butcher man bun meggings proident gluten-free, typewriter schlitz kale chips elit sartorial kombucha.
-                    </div>
-                </div>
-
-                <div class="mdl-cell--12-col mdl-card mdl-shadow--4dp content" id="tab4" style="display: none;">
-                    <div class="dj-text">
-                        Do chillwave wolf hot chicken selfies blog fam, swag cray austin VHS. Sustainable cronut placeat edison bulb cliche, pickled reprehenderit elit venmo deep v anim thundercats. 3 wolf moon pickled jianbing vape, kickstarter literally scenester godard activated charcoal coloring book street art vinyl laborum. Ullamco fugiat incididunt anim, umami occaecat swag bespoke put a bird on it. Pabst assumenda adipisicing magna, blue bottle stumptown freegan cillum pok pok est. Ethical succulents yuccie, literally whatever banjo church-key tote bag portland. Fap tousled ex, hexagon tattooed assumenda XOXO pug fashion axe schlitz edison bulb freegan aliqua kogi.
-                    </div>
-                </div>
+                <div class="" id="stage">
                 
-            </div>
+                    <section id="about" src="pages/about.html"></section>
+                    <section id="portfolio" src="pages/portfolio.html"></section>
+                    <section id="resume" src="pages/resume.html"></section>
+                    <section id="testimonials" src="pages/testimonials.html"></section>    
+
+                </div>
+
+            </main>
+
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section">
                     <div class="mdl-logo">Copyright 2016, David Reyburn</div>
                 </div>
                 <div class="mdl-mini-footer__right-section">
                     <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Contact</a></li>
+                        <li></li>
                     </ul>
                 </div>
             </footer>
-        </main>
 
-        <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    	</div>
 
-	</div>
+    </body>
 
-</body>
-
+</html>
