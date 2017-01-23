@@ -7782,7 +7782,7 @@ iframe.heightSet {
 
 div > section { display:none; }
 
-body.about           > section#about,
-body.portfolio    > section#portfolio,
-body.resume > section#resume { display:block; }
-body.testimonials    > section#testimonials,
+div.about           > section#about,
+div.portfolio    > section#portfolio,
+div.resume > section#resume,
+div.testimonials    > section#testimonials { display:block; }
