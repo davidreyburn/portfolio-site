@@ -7779,3 +7779,10 @@ iframe.heightSet {
   background-color: rgb(255,64,129);
   left: 15%;
 }
+
+body > section { display:none; }
+
+body.about           > section#about,
+body.portfolio    > section#portfolio,
+body.resume > section#resume { display:block; }
+body.testimonials    > section#testimonials,
