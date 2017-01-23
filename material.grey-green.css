@@ -7780,7 +7780,7 @@ iframe.heightSet {
   left: 15%;
 }
 
-body > section { display:none; }
+div > section { display:none; }
 
 body.about           > section#about,
 body.portfolio    > section#portfolio,
