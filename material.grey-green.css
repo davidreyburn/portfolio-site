@@ -7780,9 +7780,9 @@ iframe.heightSet {
   left: 15%;
 }
 
-div > section { display:none; }
+body > section { display:none; }
 
-div.about           > section#about,
-div.portfolio    > section#portfolio,
-div.resume > section#resume,
-div.testimonials    > section#testimonials { display:block; }
+body.about           > section#about,
+body.portfolio    > section#portfolio,
+body.resume > section#resume,
+body.testimonials    > section#testimonials { display:block; }
