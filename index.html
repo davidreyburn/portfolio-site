@@ -1,59 +1,58 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="A portfolio template that uses Material Design Lite.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        <title>dreyburn.me</title>
-        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
-    </head>
+<html lang="en" >
 
-    <body class="bg-main" ng-app="dreyburn.me" ng-cloak>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <link rel="stylesheet" href="portfolio.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+      <script src="angular-route.js"></script>
+      <script src=app.js></script>
+      
+   </head>
 
-    	<div class="mdl-layout--fixed-header" id="foreground">
+   <div ng-view></div>
 
-    		<header class="dj-header mdl-layout__header mdl-shadow--4dp mdl-layout__header--waterfall">
-                <div class="mdl-layout__header-row portfolio-logo-row">
-                    <span class="mdl-layout__title">
-                        <div class="portfolio-logo"></div>
-                        <span class="mdl-layout__title">dreyburn.me</span>
-                    </span>
-                </div>
-                <div class="mdl-layout__header-row portfolio-navigation-row">
-                    <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                        <a href="#about" class="mdl-navigation__link is-active">About</a>
-                        <a href="#portfolio" class="mdl-navigation__link lg">Portfolio</a>
-                        <a href="#resume" class="mdl-navigation__link sm">Resume</a>
-                        <a href="#testimonials" class="mdl-navigation__link sm">Testimonials</a>
-                        <a class="mdl-layout__tab" style="color:rgb(158,158,158)">____</a>
-                    </nav>
-                </div>
-            </header>
+   <body class="bg-main" ng-app="portfolioSite" ng-cloak>
 
-    	</div>
+      <md-toolbar>
+         <div class="md-toolbar-tools">
+            <h2 class="md-flex">dreyburn.me</h2>
+         </div>
+      </md-toolbar>
+      
+      <md-tabs class="md-whiteframe-6dp" md-stretch-tabs="never">
 
-        <section id="about" src="pages/about.html" default></section>
-        <section id="portfolio" src="pages/portfolio.html"></section>
-        <section id="resume" src="pages/resume.html"></section>
-        <section id="testimonials" src="pages/testimonials.html"></section>
+        <md-tab>
+          <md-button onclick="rtAbout()">About</md-button>
+        </md-tab>
+        <md-tab>
+          <md-button onclick="rtPortfolio()">Portfolio</md-button>
+        </md-tab>
+        <md-tab>
+          <md-button onclick="rtResume()">Resume</md-button>
+        </md-tab>
+        <md-tab>
+          <md-button onclick="rtTestimonials()">Testimonials</md-button>
+        </md-tab>
 
-        <footer class="mdl-mini-footer">
-            <div class="mdl-mini-footer__left-section">
-                <div class="mdl-logo">Copyright 2016, David Reyburn</div>
-            </div>
-            <div class="mdl-mini-footer__right-section">
-                <ul class="mdl-mini-footer__link-list">
-                    <li></li>
-                </ul>
-            </div>
-        </footer>
+      </md-tabs>
 
-    </body>
-    </div>
+      <ng-view></ng-view>
+
+      
+
+      <footer class="md-whiteframe-12dp">
+          <div class="footer-left">
+              <div class="">Copyright 2016, David Reyburn</div>
+          </div>
+          <div class="mdl-mini-footer__right-section">
+              
+          </div>
+      </footer>
+
+   </body>
 
 </html>
