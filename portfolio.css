@@ -4,8 +4,8 @@
     height: auto !important;
 }
 
-#stage {
-    margin: 20 auto;
+.stage {
+    margin: 20 7;
     align-self: center;
     border: 2px;
     max-width: 900px;
