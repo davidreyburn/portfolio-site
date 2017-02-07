@@ -46,6 +46,10 @@
     max-width: 100%;
 }
 
+.card-img {
+    object-fit: cover
+}
+
 .crop {
     overflow: hidden;
     max-height: 350px;
