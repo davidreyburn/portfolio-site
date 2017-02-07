@@ -98,13 +98,12 @@ footer {
 }
 
 .fade {
-    position: absolute;
     
     left: 0;
     right: 0;
     opacity: 1;
 }
-.fade.ng-enter,
+.fade.ng-enter
  {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
