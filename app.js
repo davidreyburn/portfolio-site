@@ -15,6 +15,9 @@ angular.module('portfolioSite', ['ngMaterial','ngRoute'])
     }).when('testimonials', {
     	templateUrl: 'pages/testimonials.html',
       requiresHTTPS: true
+    }).when('/candleapp', {
+    templateUrl: 'pages/candleapp.html',
+      requiresHTTPS: true
     })
 }])
 
@@ -29,5 +32,8 @@ function rtResume() {
 }
 function rtTestimonials() {
   window.location.assign("#testimonials")
+}
+function rtCandleapp() {
+  window.location.assign("#candleapp")
 }
 

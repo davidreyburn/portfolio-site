@@ -1,7 +1,11 @@
-.bg-main {
+.bg-img {
     background-image: url(./img/bg.jpg);
     background-size: 100% 100%;
     height: auto !important;
+}
+
+.bg-main {
+    background-color: lightgray;
 }
 
 .stage {
@@ -125,3 +129,6 @@ footer {
 .fade.ng-leave-active {
     opacity: 0;
 }
+md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+    color: rgb(88, 220, 94) !important;
+    background: rgb(88, 220, 94) !important;
