@@ -20,7 +20,7 @@
 .content {
     align-self: center;
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: 400;
     line-height: 2em;
     margin: auto;
     background-color: whitesmoke;
@@ -35,7 +35,7 @@
 
 .dj-card {
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 2em;
     background-color: whitesmoke;
 }
