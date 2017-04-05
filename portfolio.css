@@ -188,6 +188,10 @@ h3 span {
 }
 
 @font-face {
-    font-family: disolveRegular;
-    src: url(./fonts/disolve_regular.ttf);
+    font-family: 'dissolve_regular';
+    src: url('disolve_regular-webfont.woff2') format('woff2'),
+         url('disolve_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
