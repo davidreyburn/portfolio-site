@@ -186,3 +186,8 @@ h3 span {
    padding: 10px; 
    
 }
+
+@font-face {
+    font-family: Dissolve Regular;
+    src: url(./fonts/disolve_regular.ttf);
+}
