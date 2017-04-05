@@ -21,6 +21,9 @@ angular.module('portfolioSite', ['ngMaterial','ngRoute'])
     }).when('/lastcall', {
     templateUrl: 'pages/lastcall.html',
       requiresHTTPS: true
+    }).when('/password', {
+    templateUrl: 'pages/password.html',
+      requiresHTTPS: true
     })
 }])
 
