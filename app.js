@@ -42,4 +42,7 @@ function rtCandleapp() {
 function rtLastcall() {
   window.location.assign("#lastcall")
 }
+function rtPassword() {
+  window.location.assign("#password")
+}
 
