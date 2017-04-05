@@ -18,6 +18,9 @@ angular.module('portfolioSite', ['ngMaterial','ngRoute'])
     }).when('/candleapp', {
     templateUrl: 'pages/candleapp.html',
       requiresHTTPS: true
+    }).when('/lastcall', {
+    templateUrl: 'pages/lastcall.html',
+      requiresHTTPS: true
     })
 }])
 
@@ -35,5 +38,8 @@ function rtTestimonials() {
 }
 function rtCandleapp() {
   window.location.assign("#candleapp")
+}
+function rtLastcall() {
+  window.location.assign("#lastcall")
 }
 
