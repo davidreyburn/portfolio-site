@@ -187,6 +187,10 @@ h3 span {
    
 }
 
+.spacer {
+    padding-left: 35px;
+}
+
 @font-face {
     font-family: 'dissolve_regular';
     src: url('disolve_regular-webfont.woff2') format('woff2'),
