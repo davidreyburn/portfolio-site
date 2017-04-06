@@ -80,6 +80,10 @@ md-toolbar > div {
 	padding-left: 3% !important;
 }
 
+md-icon {
+    color: rgb(211, 211, 211);
+}
+
 md-tabs {
 	padding-left: 5%;
 	z-index: 1000;
