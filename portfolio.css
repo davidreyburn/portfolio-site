@@ -161,8 +161,7 @@ div.desc {
 }
 
 .overlay {
-    position: absolute; 
-    top: 450px; 
+    position: absolute;  
     left: 0; 
     width: 100%; 
 }
@@ -198,4 +197,20 @@ h3 span {
     font-weight: normal;
     font-style: normal;
 
+}
+
+.space {
+        /* The image used */
+        background-image: url(./img/bg.jpg);
+    }
+
+.parallax {
+  /* Set a specific height */
+  min-height: 600px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
