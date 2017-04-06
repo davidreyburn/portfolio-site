@@ -190,6 +190,10 @@ h3 span {
     padding-left: 35px;
 }
 
+.spacer-sm {
+    padding-left: 15px;
+}
+
 @font-face {
     font-family: 'comfortaabold';
     src: url('comfortaa-bold-webfont.woff2') format('woff2'),
