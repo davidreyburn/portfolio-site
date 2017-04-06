@@ -9944,7 +9944,7 @@ button.md-button::-moz-focus-inner {
 }
 
 .md-button {
-    border-radius: 3px;
+    border-radius: 0px;
     box-sizing: border-box;
     color: currentColor;
     -webkit-user-select: none;
