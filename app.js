@@ -9,13 +9,7 @@ angular.module('portfolioSite', ['ngMaterial','ngRoute'])
     }).when('/portfolio', {
     	templateUrl: 'pages/portfolio.html',
       requiresHTTPS: true
-    }).when('/resume', {
-    	templateUrl: 'pages/resume.html',
-      requiresHTTPS: true
-    }).when('testimonials', {
-    	templateUrl: 'pages/testimonials.html',
-      requiresHTTPS: true
-    }).when('/candleapp', {
+      }).when('/candleapp', {
     templateUrl: 'pages/candleapp.html',
       requiresHTTPS: true
     }).when('/lastcall', {
@@ -23,6 +17,18 @@ angular.module('portfolioSite', ['ngMaterial','ngRoute'])
       requiresHTTPS: true
     }).when('/password', {
     templateUrl: 'pages/password.html',
+      requiresHTTPS: true
+    }).when('/resume', {
+    	templateUrl: 'pages/resume.html',
+      requiresHTTPS: true
+    }).when('/projects', {
+    templateUrl: 'pages/projects.html',
+    requiresHTTPS: true
+    }).when('testimonials', {
+    	templateUrl: 'pages/testimonials.html',
+      requiresHTTPS: true
+    }).when('claimsapp', {
+      templateUrl: 'pages/claimsapp.html',
       requiresHTTPS: true
     })
 }])
@@ -35,6 +41,9 @@ function rtPortfolio() {
 }
 function rtResume() {
   window.location.assign("#resume")
+}
+function rtResume() {
+  window.location.assign("#projects")
 }
 function rtTestimonials() {
   window.location.assign("#testimonials")
